@@ -3,10 +3,10 @@
 ifeq ($(CONFIG_DRM_MEDIATEK), y)
 ccflags-$(CONFIG_DRM_MEDIATEK) += -I$(srctree)/drivers/gpu/drm/mediatek/
 endif
-ccflags-$(CONFIG_DRM_MEDIATEK_V2) += -I$(srctree)/drivers/gpu/drm/mediatek/mediatek_v2/
+# ccflags-$(CONFIG_DRM_MEDIATEK_V2) += -I$(srctree)/drivers/gpu/drm/mediatek/mediatek_v2/
 
 
-ccflags-y += -DHX_MTK_K510
+# ccflags-y += -DHX_MTK_K510
 
 ifneq ($(filter y, $(CONFIG_KALLSYMS_ALL)),)
 	ccflags-y += -D__KERNEL_KALLSYMS_ALL_ENABLED__

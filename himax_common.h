@@ -792,8 +792,8 @@ extern bool g_has_alg_overlay;
 /*void himax_HW_reset(uint8_t loadconfig,uint8_t int_off);*/
 #if defined(HX_FIRMWARE_HEADER)
 #include "himax_firmware.h"
-extern int32_t g_hx_panel_id;
-int32_t get_fw_index(int32_t fw_type);
+extern uint32_t g_hx_panel_id;
+uint32_t get_fw_index(int32_t fw_type);
 void mapping_panel_id_from_dt(struct device_node *dt);
 #endif
 
